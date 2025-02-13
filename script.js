@@ -2,12 +2,9 @@ const proverbElement = document.getElementById('proverb');
 
 const fetchProverb = async () => {
   try {
-    const response = await fetch('https://api-ninjas.com/api/quotes?category=proverb', { 
-      headers: { 'X-Api-Key': 'YOUR_API_KEY' } // Replace with your actual API key
-    });
+    const response = await fetch('https://api.quotable.io/random?tags=wisdom'); // Fetching quotes tagged with "wisdom"
     const data = await response.json();
-    // Assuming the API returns an array of quotes:
-    proverbElement.textContent = data[0].quote; 
+    proverbElement.textContent = data.content; 
   } catch (error) {
     console.error("Couldn't fetch proverb:", error);
     proverbElement.textContent = 'Error fetching proverb. Please try again later.';
