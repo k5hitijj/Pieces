@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #e0ffff, #cce0ff); /* Light blue gradient */
+  background: linear-gradient(to bottom, #e0ffff, #cce0ff); 
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,15 +12,15 @@ body {
 
 #container {
   background-color: #fff;
-  padding: 60px 80px; /* Increased padding */
-  border-radius: 12px; /* Softer corners */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* More pronounced shadow */
+  padding: 60px 80px; 
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
   text-align: center; 
 }
 
 #proverb {
-  font-size: 28px; /* Larger font size */
-  color: #2c3e50; /* Dark grey color */
-  line-height: 1.8; /* More spacing between lines */
-  font-style: italic; /* Italic for a proverb feel */
+  font-size: 28px; 
+  color: #2c3e50; 
+  line-height: 1.8; 
+  font-style: italic; 
 }
