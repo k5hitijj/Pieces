@@ -12,9 +12,7 @@ const quotes = [
 ];
 
 const proverbElement = document.getElementById('proverb');
-const changeQuoteButton = document.createElement('button'); // Create a button element
-changeQuoteButton.textContent = 'New Quote'; // Add text to the button
-document.body.appendChild(changeQuoteButton); // Add button to the HTML body
+const changeQuoteButton = document.getElementById('changeQuoteButton'); 
 
 function getRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -23,4 +21,4 @@ function getRandomQuote() {
 
 getRandomQuote(); // Display a quote on load
 
-changeQuoteButton.addEventListener('click', getRandomQuote); // Attach event listener to the button
+changeQuoteButton.addEventListener('click', getRandomQuote); 
